@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="75C-zU-ZdT">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="75C-zU-ZdT">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,47 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEg-Jf-3YQ">
-                                <rect key="frame" x="16" y="80" width="53" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEg-Jf-3YQ">
+                                <rect key="frame" x="16" y="60" width="52" height="30"/>
                                 <state key="normal" title="Articles"/>
                                 <connections>
                                     <action selector="openHC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jad-LC-w4Y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCJ-oe-tLR">
-                                <rect key="frame" x="323" y="80" width="36" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCJ-oe-tLR">
+                                <rect key="frame" x="323" y="60" width="36" height="30"/>
                                 <state key="normal" title="Send"/>
                                 <connections>
                                     <action selector="sendRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0bG-pZ-JCC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzC-H4-9xb">
-                                <rect key="frame" x="152" y="80" width="71" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzC-H4-9xb">
+                                <rect key="frame" x="152" y="60" width="71" height="30"/>
                                 <state key="normal" title="Ticket List"/>
                                 <connections>
                                     <action selector="openRequestList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TcA-07-e62"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ch-A2-5Nn">
-                                <rect key="frame" x="16" y="172" width="88" height="20.5"/>
+                                <rect key="frame" x="16" y="156" width="88" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFV-Ha-IKe">
-                                <rect key="frame" x="16" y="126" width="63" height="30"/>
+                                <rect key="frame" x="16" y="106" width="63" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your subject here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nZy-dx-yA9">
-                                <rect key="frame" x="112" y="126" width="247" height="30"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="112" y="106" width="247" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Cqz-gV-Uep">
-                                <rect key="frame" x="112" y="172" width="247" height="209"/>
+                                <rect key="frame" x="112" y="156" width="247" height="209"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="209" id="TBH-5u-RLJ"/>
@@ -67,34 +64,52 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm5-2Z-fJk">
-                                <rect key="frame" x="16" y="208.5" width="74" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm5-2Z-fJk">
+                                <rect key="frame" x="16" y="192.5" width="74" height="30"/>
                                 <state key="normal" title="Add Image"/>
                                 <connections>
                                     <action selector="addImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pjp-6C-Cab"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1OQ-tY-B2M">
-                                <rect key="frame" x="16" y="254.5" width="88" height="88"/>
+                                <rect key="frame" x="16" y="238.5" width="88" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="0uv-Ev-e2d"/>
                                     <constraint firstAttribute="width" constant="88" id="F4W-3q-grT"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWf-Bs-h9S">
-                                <rect key="frame" x="16" y="350.5" width="88" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWf-Bs-h9S">
+                                <rect key="frame" x="16" y="334.5" width="88" height="30"/>
                                 <state key="normal" title="Refresh"/>
                                 <connections>
                                     <action selector="refreshForTicketUpdate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8I2-rg-0vo"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Custom Text Field" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E2L-dq-RQh">
-                                <rect key="frame" x="16" y="397" width="343" height="30"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="16" y="381" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4T-41-IH1">
+                                <rect key="frame" x="195" y="456" width="117" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clear Cache"/>
+                                <connections>
+                                    <action selector="cleanAll" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oss-U6-Y8w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OB2-Ld-JxE">
+                                <rect key="frame" x="31" y="456" width="117" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Open Ticket"/>
+                                <connections>
+                                    <action selector="openTickets" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qda-cl-Ipl"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="E2L-dq-RQh" firstAttribute="top" secondItem="Cqz-gV-Uep" secondAttribute="bottom" constant="16" id="3WJ-Ze-RuO"/>
@@ -128,14 +143,15 @@
                             <constraint firstItem="Cqz-gV-Uep" firstAttribute="leading" secondItem="sWf-Bs-h9S" secondAttribute="trailing" constant="8" id="tJx-vK-UAU"/>
                             <constraint firstItem="3ch-A2-5Nn" firstAttribute="leading" secondItem="FFV-Ha-IKe" secondAttribute="leading" id="uj1-gl-cK5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="5th-CI-JMi"/>
                     <connections>
                         <outlet property="addImageButton" destination="qm5-2Z-fJk" id="PHA-ka-WFr"/>
                         <outlet property="attachmentImageView" destination="1OQ-tY-B2M" id="i1r-9j-taM"/>
+                        <outlet property="clearCacheButton" destination="f4T-41-IH1" id="FkR-Zy-LhK"/>
                         <outlet property="customFieldTextField" destination="E2L-dq-RQh" id="jY4-Cw-EGM"/>
                         <outlet property="descriptionTextView" destination="Cqz-gV-Uep" id="Cnh-Yh-Yhw"/>
+                        <outlet property="openTicketButton" destination="OB2-Ld-JxE" id="45h-DX-FSX"/>
                         <outlet property="sendButton" destination="LCJ-oe-tLR" id="pCp-yI-uCh"/>
                         <outlet property="subjectTextField" destination="nZy-dx-yA9" id="cSM-qq-ief"/>
                         <outlet property="ticketListButton" destination="kzC-H4-9xb" id="Z3O-Z4-8bM"/>
@@ -152,7 +168,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="aA5-rh-Ufx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zcP-Ed-JeU">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -22,7 +22,10 @@ final class ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var ticketListButton: UIButton!
     @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var addImageButton: UIButton!
+    @IBOutlet weak var openTicketButton: UIButton!
+    @IBOutlet weak var clearCacheButton: UIButton!
     @IBOutlet weak var customFieldTextField: UITextField!
+    
     
     
     // MARK: Zendesk UiConfigurations
@@ -143,6 +146,18 @@ final class ViewController: UIViewController, UINavigationControllerDelegate {
         present(imagePickerController, animated: true, completion: nil)
     }
     
+    @IBAction func cleanAll() {
+        Zendesk.instance?.storeModule.clearSession()
+    }
+    
+    @IBAction func openTickets() {
+//        let id = "53044"
+        let id = "50952"
+        
+        let requestTicket = RequestUi.buildRequestUi(requestId: id)
+        self.navigationController?.pushViewController(requestTicket, animated: true)
+    }
+
     private func getImageDataFrom(view: UIImageView) -> Data?{
         guard let image = view.image else { return nil }
         return image.pngData()

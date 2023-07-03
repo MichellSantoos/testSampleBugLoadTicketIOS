@@ -27,13 +27,15 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
                            zendeskUrl: "<#zendeskUrl#>")
 
         Support.initialize(withZendesk: Zendesk.instance)
-        // Support is needed to hand off tickets from AB
 
-        // Set an identity for authentication.
-        let identity = Identity.createAnonymous()
-        // let identity = Identity.createJwt(token: "JWT_User_Identifier")
+        let identity = Identity.createJwt(token: "JWT_User_Identifier")
         Zendesk.instance?.setIdentity(identity)
+        
+        let url =  Zendesk.instance?.storeModule.cacheDirectory
+        if let path = url?.path  {
+            print("####",url)
+        }
+        
         return true
     }
 }
-
