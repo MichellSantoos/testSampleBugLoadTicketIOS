@@ -22,13 +22,13 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize the SDK with your Zendesk instance
         // Get these details from your Zendesk dashboard: Admin -> Channels -> MobileSDK.
         #warning("Enter your zendesk app configs here")
-        Zendesk.initialize(appId: "<#appId#>",
-                           clientId: "<#clientId#>",
-                           zendeskUrl: "<#zendeskUrl#>")
+        Zendesk.initialize(appId: "Set PP appId ",
+                           clientId: "Set PP clientID ",
+                           zendeskUrl: "https://picpay21589831114.zendesk.com")
 
         Support.initialize(withZendesk: Zendesk.instance)
 
-        let identity = Identity.createJwt(token: "JWT_User_Identifier")
+        let identity = Identity.createJwt(token: "Set PP Token User")
         Zendesk.instance?.setIdentity(identity)
         
         let url =  Zendesk.instance?.storeModule.cacheDirectory
